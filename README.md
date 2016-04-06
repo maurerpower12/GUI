@@ -1,20 +1,19 @@
 # GUI
 Labs for the Graphical User Interface(CST 238) class at the Oregon Institute of Technology. 
-
-# Project logo:
-Below is a little bit of what the proposed logo would look like. To get the full effect, it shows what the icon would look like on the app store, on the homescreen, and if it were going to be streched to several diffenent sizes (iPad resolution versus iPhone). 
-![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
-
 # Description: 
 Cross platform notecard making and studying application **Study Smart** aims at making studying and quizing yourself on any device easier. This crossplateform application works on iOS, Android and all major desktop platforms *(Windows, OSX, Linux)*. Built entirely from scratch using C++ and the Qt framework. :fire:
 
 The goal of this application is to help anyone see improvements in their ability to memorize whatever they need to and do better in school :memo: work :bar_chart: or for whatever the future holds :crystal_ball:
 
+# Project logo:
+Below is a little bit of what the proposed logo would look like. To get the full effect, it shows what the icon would look like on the app store, on the homescreen, and if it were going to be streched to several diffenent sizes (iPad resolution versus iPhone). 
+![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
+
 # Technologies
 C++, Qt, QML, and Javascript
 
 # Screenshots: 
-Prototype of UI: 
+Wireframe of UI: 
 ![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%20StoryBoard.jpg)
 As you can see above the UI for the app is going to be broken down into a couple of screens. The main screen is the one in the middle that allows the user to enter questions and answers for each notecard. The sideways view at the bottom shows how the user can press if they got the card right or wrong. The top right describes how the user can type in an answer and the app will then tell them if it is correct or not. 
 
