@@ -7,7 +7,7 @@ The goal of this application is to help anyone see improvements in their ability
 
 # Project logo:
 Below is a little bit of what the proposed logo would look like. To get the full effect, it shows what the icon would look like on the app store, on the homescreen, and if it were going to be streched to several diffenent sizes (iPad resolution versus iPhone). 
-![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
+![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20smart%20mock%203.jpg)
 
 # Technologies
 C++, Qt, QML, and Javascript
