@@ -32,7 +32,6 @@ As you can see above the UI for the app is going to be broken down into a couple
 
 # Contributor List:
 * Joseph Maurer
-- - - -
 
 # Credits, Inspiration, Alternatives
 Credit for this idea goes to Ryan Williams! He had the idea of making a simple note card app. With his blessing I took on this as my project idea. Also credit needs to go to Ashley Wagner, Coryna Johnson, Eliza Henderson, Jared Smith and Stephen Alspach for all of us brainstorming ideas for projects together in lab. 
