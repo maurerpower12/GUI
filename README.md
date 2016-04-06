@@ -1,5 +1,5 @@
 # GUI Term Project
-This repository represents the 3 month project for the Graphical User Interface(CST 238) class taught at the Oregon Institute of Technology by David Bishop, [Stewart Taylor](https://github.com/StewartTaylor), [Jacob Neal](https://github.com/jacobneal), [Christopher Daen](https://github.com/Tpimp).
+This repository represents the 3 month project for the Graphical User Interface(CST 238) class taught at the Oregon Institute of Technology by David Bishop, [Stewart Taylor](https://github.com/StewartTaylor), [Jacob Neal](https://github.com/jacobneal), and [Christopher Daen](https://github.com/Tpimp).
 
 # Description: 
 Cross platform notecard making and studying application **Study Smart** aims at making studying and quizing yourself on any device easier. This crossplateform application works on iOS, Android and all major desktop platforms *(Windows, OSX, Linux)*. Built entirely from scratch using C++ and the Qt framework. :fire:
