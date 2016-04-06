@@ -6,15 +6,18 @@ Below is a little bit of what the proposed logo would look like. To get the full
 ![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
 
 # Description: 
-
+Cross platform note card making and studying application Study Smart aims at making studying and quizing yourself on any device easier. This crossplateform application works on iOS, Android and all major desktop platforms (Windows, OSX, Linux). Built entirely from scratch using C++ and the Qt framework.
 
 # Technologies
+C++, Qt, QML, and Javascript
 
 # Screenshots: 
 
 
 # Installation Instructions: 
-
+1. Install Qt 5.6 
+2. Open project 
+3. Clean all, run qmake, build all, run. 
 
 #Contribution Guidelines
 
@@ -24,6 +27,9 @@ Below is a little bit of what the proposed logo would look like. To get the full
 # Contributor List:
 
 # Credits, Inspiration, Alternatives
+Credit for this idea goes to Ryan Williams! He had the idea of making a simple note card app. With his blessing I took on this as my project idea. Also credit needs to go to Ashley Wagner, Coryna Johnson, Eliza Henderson, Jared Smith and Stephen Alspach for all of us brainstorming ideas for projects together in lab. 
+There are plenty of apps like this one avaible on the market. Similar apps include Study Blue and Quizlet. These apps aren't solely devoted to note card making, but do include this element. 
+
 
 #License
 The MIT License (MIT)
