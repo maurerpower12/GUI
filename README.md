@@ -14,6 +14,9 @@ The goal of this application is to help anyone see improvements in their ability
 C++, Qt, QML, and Javascript
 
 # Screenshots: 
+Prototype of UI: 
+![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%20StoryBoard.jpg)
+As you can see above the UI for the app is going to be broken down into a couple of screens. The main screen is the one in the middle that allows the user to enter questions and answers for each notecard. The sideways view at the bottom shows how the user can press if they got the card right or wrong. The top right describes how the user can type in an answer and the app will then tell them if it is correct or not. 
 
 
 # Installation Instructions: 
