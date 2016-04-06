@@ -9,8 +9,8 @@ Labs for the Graphical User Interface(CST 238) class at the Oregon Institute of 
 
 # Technologies
 
-
 # Screenshots: 
+![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20smart.jpg)
 
 # Installation Instructions: 
 
