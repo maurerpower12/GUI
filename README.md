@@ -2,7 +2,8 @@
 Labs for the Graphical User Interface(CST 238) class at the Oregon Institute of Technology. 
 
 # Project logo:
-
+Below is a little bit of what the proposed logo would look like. To get the full effect, it shows what the icon would look like on the app store, on the homescreen, and if it were going to be streched to several diffenent sizes (iPad resolution versus iPhone). 
+![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
 
 # Description: 
 
@@ -10,7 +11,7 @@ Labs for the Graphical User Interface(CST 238) class at the Oregon Institute of 
 # Technologies
 
 # Screenshots: 
-![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20smart.jpg)
+
 
 # Installation Instructions: 
 
