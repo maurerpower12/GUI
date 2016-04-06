@@ -6,7 +6,9 @@ Below is a little bit of what the proposed logo would look like. To get the full
 ![alt tag](https://github.com/maurerpower12/GUI/blob/master/Study%20Smart%202.jpg)
 
 # Description: 
-Cross platform notecard making and studying application **Study Smart** aims at making studying and quizing yourself on any device easier. This crossplateform application works on iOS, Android and all major desktop platforms *(Windows, OSX, Linux)*. Built entirely from scratch using C++ and the Qt framework. :boom:
+Cross platform notecard making and studying application **Study Smart** aims at making studying and quizing yourself on any device easier. This crossplateform application works on iOS, Android and all major desktop platforms *(Windows, OSX, Linux)*. Built entirely from scratch using C++ and the Qt framework. :fire:
+
+The goal of this application is to help anyone see improvements in their ability to memorize whatever they need to and do better in school :memo: work :bar_chart: or for whatever the future holds :crystal_ball:
 
 # Technologies
 C++, Qt, QML, and Javascript
@@ -22,8 +24,9 @@ C++, Qt, QML, and Javascript
 #Contribution Guidelines
 
 # Bugs:
-- [ ] This is an incomplete item
-- - [ ] This is an incomplete item
+- [ ] 
+- [ ] 
+- [ ]
 
 # Contributor List:
 
