@@ -26,7 +26,6 @@ C++, Qt, QML, and Javascript
 # Bugs:
 - [ ] 
 - [ ] 
-- [ ]
 
 # Contributor List:
 
