@@ -30,16 +30,17 @@ The far left screen shows what the user would see when they first login. You can
 3. Clean all, run qmake, build all, run. 
 
 #Contribution Guidelines
+Submission must comply with the Oregon Tech Coding Style Guide. [See here under documents.](http://www.cset.oit.edu)
 
 # Bugs:
-- [ ] 
+- [ ] No bugs report yet. More to come when development begins. 
 - [ ] 
 
 # Contributor List:
 * Joseph Maurer
 
 # Credits, Inspiration, Alternatives
-Credit for this idea goes to Ryan Williams! He had the idea of making a simple note card app. With his blessing I took on this as my project idea. Also credit needs to go to Ashley Wagner, Coryna Johnson, Eliza Henderson, Jared Smith and Stephen Alspach for all of us brainstorming ideas for projects together in lab. 
+Credit for this idea goes to Ryan Williams! He had the idea of making a simple note card app. With his blessing I took on this as my project idea. Also credit needs to go to Ashley Wagner, Coryna Johnson, Eliza Henderson, Jared Smith and Steven Alspach for all of us brainstorming ideas for projects together in lab. 
 
 There are plenty of apps like this one avaible on the market. Similar apps include Study Blue and Quizlet. These apps aren't solely devoted to note card making, but do include this element. 
 
