@@ -34,7 +34,6 @@ Submission must comply with the Oregon Tech Coding Style Guide. [See here under 
 
 # Bugs:
 - [ ] No bugs report yet. More to come when development begins. 
-- [ ] 
 
 # Contributor List:
 * Joseph Maurer
