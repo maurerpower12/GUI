@@ -3,9 +3,12 @@ import QtQuick 2.6
 Rectangle {
     id: main_btn
     property alias mouseArea: mouseArea
+    property alias inner_txt: name_btn.text
+
     width: parent.width / 5
     height: parent.height / 9
     radius: 5
+    border.color: "black"
 
 
 
@@ -24,9 +27,7 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             color = "red";
-
         }
-
         onExited: {
             color = "orange";
         }

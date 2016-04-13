@@ -23,23 +23,18 @@ ApplicationWindow {
 
     title: qsTr("Study Smart")
 
-    Dialog {
-        MyButton {
-               color: "light blue"
-               anchors.centerIn: parent
-           }
+//    MyDialog {
+//        id: retest
+//    }
+    Splash {
+        id: begin
+        inner_text: "Welcome to Study Smart! We are about to change the way in which you learn. Not only that, but we will change the way you memorize all of the things in your life!"
+       // inner_text: " "
+        z: 10
     }
-
-    MyButton {
-        color: "light blue"
-        anchors.centerIn: parent
+    Splash {
+        id: behind
+        inner_text: "Hello From the other side"
+        z: -1
     }
-
-    Notification {
-        not_color: "light blue"
-        inner_txt: "Notifications can be displayed to the user using this method! Click the 'x' over there to make it go away---->"
-        time_in: 500
-    }
-
-
 }

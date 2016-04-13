@@ -6,7 +6,7 @@ Rectangle {
     property alias not_color: notification.color
     property alias inner_txt: inner_text.text
     property alias time_in: animateInto.duration
-    property alias inner_font: inner_text.font.family;
+    property alias inner_font: inner_text.font.family
 
 
     width: parent.width
@@ -23,6 +23,23 @@ Rectangle {
         color: "black"
     }
 
+
+//    MyButton {
+//        id: btn
+//        anchors.verticalCenter: parent.verticalCenter
+//        anchors.right: parent.right;
+//        anchors.rightMargin: 10
+//        inner_txt: "Exit"
+
+//        color: not_color
+//        MouseArea {
+//                  anchors.fill: parent
+//                  onClicked: {
+
+//                      animateGoAway.start();
+//                  }
+//              }
+//    }
     Text {
         anchors.verticalCenter: parent.verticalCenter
         anchors.right: parent.right;
@@ -40,9 +57,11 @@ Rectangle {
         }
     }
 
-
     PropertyAnimation {
-        Component.onCompleted: animateInto.start();
+        Component.onCompleted: {
+            notification.visible = true;
+            animateInto.start();
+        }
 
         id: animateInto;
         target: notification;
@@ -63,11 +82,14 @@ Rectangle {
         from: 10
         to: -100
         duration: 1000
+        onStopped: notification.visible = false;
    }
 
    Timer {
-        interval: 2000; running: true; repeat: false
-        onTriggered: animateGoAway.start();
+        interval: 5000; running: true; repeat: false
+        onTriggered: {
+            animateGoAway.start();
+        }
    }
 
 }

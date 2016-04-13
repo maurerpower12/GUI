@@ -4,6 +4,7 @@
         <file>MainForm.ui.qml</file>
         <file>MyButton.qml</file>
         <file>Notification.qml</file>
-        <file>Dialog.qml</file>
+        <file>MyDialog.qml</file>
+        <file>Splash.qml</file>
     </qresource>
 </RCC>
