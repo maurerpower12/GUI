@@ -16,6 +16,7 @@ import QtQuick.Dialogs 1.2
 import QtQuick.Window 2.2
 
 ApplicationWindow {
+    id: main_window
     visible: true
     height: 768
     property int widthVar:1000
@@ -28,13 +29,15 @@ ApplicationWindow {
 //    }
     Splash {
         id: begin
-        inner_text: "Welcome to Study Smart! We are about to change the way in which you learn. Not only that, but we will change the way you memorize all of the things in your life!"
+        inner_text: "Welcome to Study Smart!"
        // inner_text: " "
         z: 10
+
     }
-    Splash {
-        id: behind
-        inner_text: "Hello From the other side"
-        z: -1
-    }
+//    Splash {
+//        id: behind
+//        inner_text: "Hello From the other side"
+//        z: -1
+//    }
+
 }

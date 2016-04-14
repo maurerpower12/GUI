@@ -8,9 +8,7 @@ Rectangle {
     width: parent.width / 5
     height: parent.height / 9
     radius: 5
-    border.color: "black"
-
-
+    //border.color: "black"
 
     Text {
         id: name_btn
@@ -27,6 +25,7 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             color = "red";
+            main_window.close();
         }
         onExited: {
             color = "orange";

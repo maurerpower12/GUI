@@ -6,7 +6,6 @@ Rectangle {
     property real  maximumDragY:0
     property alias drag:mouseArea.drag
     property alias inner_txt: not.inner_txt
-    property alias btn_txt: btn.inner_txt
 
     id: outer
     width: parent.width / 2
@@ -14,14 +13,6 @@ Rectangle {
     radius: 5
     color: "white"
 
-    MyButton {
-        id: btn
-        color: "light blue"
-        inner_txt: "Edge"
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 10
-    }
 
     Notification {
         id: not
