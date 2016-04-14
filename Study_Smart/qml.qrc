@@ -8,5 +8,6 @@
         <file>Splash.qml</file>
         <file>Splash_gif.gif</file>
         <file>Splash.jpg</file>
+        <file>Icon.jpg</file>
     </qresource>
 </RCC>

@@ -23,39 +23,12 @@ Rectangle {
         color: "black"
     }
 
-
-//    MyButton {
-//        id: btn
-//        anchors.verticalCenter: parent.verticalCenter
-//        anchors.right: parent.right;
-//        anchors.rightMargin: 10
-//        inner_txt: "Exit"
-
-//        color: not_color
-//        MouseArea {
-//                  anchors.fill: parent
-//                  onClicked: {
-
-//                      animateGoAway.start();
-//                  }
-//              }
-//    }
-    Text {
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.right: parent.right;
-        anchors.rightMargin: 10
-        text: "X"
-        font.family: "Copperplate Gothic Light"
-
-        font.pointSize: 15
-        color: "black"
-        MouseArea {
-            anchors.fill: parent
+    MouseArea {
+        anchors.fill: parent
             onClicked: {
-                animateGoAway.start()
+                animateGoAway.start();
             }
         }
-    }
 
     PropertyAnimation {
         Component.onCompleted: {
@@ -83,14 +56,14 @@ Rectangle {
         to: -100
         duration: 1000
         onStopped: notification.visible = false;
-   }
+    }
 
-   Timer {
+    Timer {
         interval: 5000; running: true; repeat: false
         onTriggered: {
             animateGoAway.start();
         }
-   }
+    }
 
 }
 

@@ -24,20 +24,12 @@ ApplicationWindow {
 
     title: qsTr("Study Smart")
 
-//    MyDialog {
-//        id: retest
-//    }
     Splash {
         id: begin
         inner_text: "Welcome to Study Smart!"
-       // inner_text: " "
         z: 10
 
     }
-//    Splash {
-//        id: behind
-//        inner_text: "Hello From the other side"
-//        z: -1
-//    }
+
 
 }
