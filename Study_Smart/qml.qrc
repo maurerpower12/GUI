@@ -6,8 +6,7 @@
         <file>Notification.qml</file>
         <file>MyDialog.qml</file>
         <file>Splash.qml</file>
-        <file>Splash_gif.gif</file>
         <file>Splash.jpg</file>
-        <file>Icon.jpg</file>
+        <file>NoteCard.qml</file>
     </qresource>
 </RCC>

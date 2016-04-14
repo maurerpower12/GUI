@@ -23,13 +23,6 @@ Rectangle {
         color: "black"
     }
 
-    MouseArea {
-        anchors.fill: parent
-            onClicked: {
-                animateGoAway.start();
-            }
-        }
-
     PropertyAnimation {
         Component.onCompleted: {
             notification.visible = true;

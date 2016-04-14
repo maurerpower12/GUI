@@ -24,12 +24,66 @@ ApplicationWindow {
 
     title: qsTr("Study Smart")
 
-    Splash {
-        id: begin
-        inner_text: "Welcome to Study Smart!"
-        z: 10
+//    Splash {
+//        id: begin
+//        inner_text: "Welcome to Study Smart!"
+//    }
+
+
+
+    NoteCard
+    {
+        id: question
+        visible: true;
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+    }
+    NoteCard
+    {
+        id: answer
+        visible: false;
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
 
     }
 
+    Button {
+        text: "Flip over card"
 
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                if(question.visible)
+                {
+                    question.visible = false;
+                    answer.visible = true;
+                }
+                else
+                {
+                    question.visible = true;
+                    answer.visible = false;
+                }
+            }
+        }
+    }
+
+    Button {
+        text: "Next Notecard"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                if(question.visible)
+                {
+                    question.visible = false;
+                    answer.visible = true;
+                }
+                else
+                {
+                    question.visible = true;
+                    answer.visible = false;
+                }
+            }
+        }
+    }
 }

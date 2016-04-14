@@ -26,9 +26,6 @@ Rectangle {
             drag.target: parent
             drag.maximumX: outer.width
             drag.maximumY: outer.height
-            onClicked: {
-                color: "red"
-            }
         }
     }
 }
