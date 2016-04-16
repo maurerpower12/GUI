@@ -6,10 +6,11 @@ deck::deck()
     m_num_cards = 0;
 }
 
-void deck::add_notecard(notecard & pass)
+void deck::add_notecard(const notecard & pass)
 {
     //m_deck.append(pass);
-    m_deck[m_num_cards] = pass;
+    //m_deck[m_num_cards] = pass;
+    m_deck.append(pass);
     m_num_cards++;
 }
 
@@ -18,7 +19,7 @@ int deck::get_numcards()
     return m_num_cards;
 }
 
-void deck::remove_notecard(notecard & pass)
+void deck::remove_notecard(const notecard & pass)
 {
 //    for(int i(0); i < m_num_cards; i++)
 //    {

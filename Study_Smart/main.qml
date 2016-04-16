@@ -73,16 +73,7 @@ ApplicationWindow {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                if(question.visible)
-                {
-                    question.visible = false;
-                    answer.visible = true;
-                }
-                else
-                {
-                    question.visible = true;
-                    answer.visible = false;
-                }
+                FirstCard.
             }
         }
     }

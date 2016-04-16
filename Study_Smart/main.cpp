@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
     deck all_the_cards;
     notecard first("Which athlete has won the most Olympic medals?", "Michael Phelps");
     notecard second("In the movie \"Back to the Future\", what speed did the DeLorean need to reach in order to achieve time travel?", "88 mph");
-    all_the_cards.add_notecard(&first);
-    all_the_cards.add_notecard(&second);
+    all_the_cards.add_notecard(first);
+    all_the_cards.add_notecard(second);
     engine.rootContext()->setContextProperty("FirstCard", &all_the_cards);
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
