@@ -8,7 +8,6 @@ Rectangle {
     property alias time_in: animateInto.duration
     property alias inner_font: inner_text.font.family
 
-
     width: parent.width
     height: 100
     y:-100
