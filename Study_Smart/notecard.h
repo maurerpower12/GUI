@@ -18,7 +18,6 @@ class notecard : public QObject
 public:
         notecard(QString question, QString answer);
 public slots:
-
     QString get_question();
     void set_question(QString question);
 

@@ -24,10 +24,10 @@ ApplicationWindow {
 
     title: qsTr("Study Smart")
 
-//    Splash {
-//        id: begin
-//        inner_text: "Welcome to Study Smart!"
-//    }
+    Splash {
+        id: begin
+        inner_text: "Welcome to Study Smart!"
+    }
 
 
 
@@ -69,12 +69,15 @@ ApplicationWindow {
 
     Button {
         text: "Next Notecard"
-
+        anchors.horizontalCenter: parent.horizontalCenter;
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                FirstCard.
+                console.log("Next...");
             }
         }
     }
+
+
+
 }
