@@ -9,11 +9,14 @@
 //              04/08/16 Made the Notification animations
 //**************************************************************\
 
-
 import QtQuick 2.6
 import QtQuick.Controls 1.3
 import QtQuick.Dialogs 1.2
 import QtQuick.Window 2.2
+import QtQuick.Layouts 1.3
+import Qt.labs.settings 1.0
+
+import "fontawesome.js" as FontAwesome
 
 ApplicationWindow {
     id: main_window
@@ -22,14 +25,30 @@ ApplicationWindow {
     property int widthVar:1000
     width:  widthVar +24
 
-    title: qsTr("Study Smart")
-
-    Splash {
-        id: begin
-        inner_text: "Welcome to Study Smart!"
+    Settings
+    {
+        id: settings_global
+        property alias color: main_window.color
+        //property alias muted_hsjakh: iPod_intro.muted
     }
 
 
+    title: qsTr("Study Smart")
+    ToolBar {
+        RowLayout {
+            ToolButton {
+                id: tool_logo
+                text: 'Study Smart'
+                anchors.fill: parent
+                Layout.alignment: Qt.AlignCenter
+            }
+        }
+    }
+
+//    Splash {
+//        id: begin
+//        inner_text: "Welcome to Study Smart!"
+//    }
 
     NoteCard
     {
@@ -51,35 +70,39 @@ ApplicationWindow {
         id: rect_menu
         height: parent.height
         width: 350
-
-        //anchors.right: parent.right
         x: -350
-        color: "light grey"
-        //visible: false
+        z: 1000
+        color: "grey"
 
         Behavior on opacity { NumberAnimation { duration: 1300 } }
-        border.width: 5
-        //anchors.margins: -10
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                //rect_menu.visible = false;
-            }
+        border.width: 2
+        Text {
+            id: txt_settings_title
+            text: "Settings"
+            anchors.horizontalCenter: parent.horizontalCenter;
         }
-//        PropertyAnimation {
-//            Component.onCompleted: {
-//                rect_menu.visible = true;
-//                settingsinto.start();
-//            }
+        Text {
+            id: txt_color_title
+            text: "Background Color:"
+            anchors.horizontalCenter: parent.horizontalCenter;
+            anchors.top: txt_settings_title.bottom
+        }
+        Grid {
+            id: colorPicker
+            x: 4;
+            rows: 2; columns: 3; spacing: 3
+            anchors.horizontalCenter: parent.horizontalCenter;
+            anchors.top: txt_color_title.bottom
 
-//            id: settingsinto;
-//            target: rect_menu;
-//            easing.type: Easing.Linear;
+            Rectangle { color: "#ea7272"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color} }
+            Rectangle { color: "light green"; width: 50; height: 50; MouseArea {anchors.fill: parent; onClicked: main_window.color = parent.color }}
+            Rectangle { color: "light blue"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color }}
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color }}
+            Rectangle { color: "steelblue"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color }}
+            Rectangle { color: "black"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color }}
 
-//            property: "x";
-//            to: 0
-//            duration: 100;
-//        }
+        }
+
         NumberAnimation {
             id: settingsGoAway;
             target: rect_menu;
@@ -102,13 +125,30 @@ ApplicationWindow {
         }
     }
 
+  Button {
+      text: "menu"
+      anchors.left: rect_menu.right
+      y: 40
+      MouseArea {
+          anchors.fill: parent
+          onClicked: {
+              settingsInto2.start();
+              if(rect_menu.visible === true) {
+                  settingsGoAway.start();
+              }
+              else {
+                   settingsInto2.start();
+              }
+          }
+      }
+  }
     // End front facing stuff
 
 
     Button {
         text: "Flip over card"
-        anchors.right: parent.right
-
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
         MouseArea {
             anchors.fill: parent
             onClicked: {
@@ -128,8 +168,8 @@ ApplicationWindow {
 
     Button {
         text: "Next Notecard"
-        anchors.horizontalCenter: parent.horizontalCenter
-
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
         MouseArea {
             anchors.fill: parent
             onClicked: {
@@ -138,23 +178,4 @@ ApplicationWindow {
         }
     }
 
-    Button {
-        text: "menu"
-        //anchors.right: parent.right
-        anchors.left: rect_menu.right
-        //anchors.left: parent.left
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                settingsInto2.start();
-                if(rect_menu.visible === true) {
-                    settingsGoAway.start();
-
-                }
-                else {
-                    settingsInto2.start();
-                }
-            }
-        }
-    }
 }

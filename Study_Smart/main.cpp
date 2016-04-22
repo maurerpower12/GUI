@@ -15,6 +15,12 @@ int main(int argc, char *argv[])
     QSplashScreen splash(pixmap);
     splash.show();
 
+    // Settings code
+    QCoreApplication::setApplicationName("Study_Smart");
+    QCoreApplication::setOrganizationName("MaurerPower");
+    QCoreApplication::setOrganizationDomain(".com");
+
+
     app.processEvents();
 
     //deck all_the_cards;

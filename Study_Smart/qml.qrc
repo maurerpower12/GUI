@@ -8,5 +8,8 @@
         <file>Splash.qml</file>
         <file>Splash.jpg</file>
         <file>NoteCard.qml</file>
+        <file>fontawesome.js</file>
+        <file>FontAwesome.qml</file>
+        <file>SystemSettings.qml</file>
     </qresource>
 </RCC>
