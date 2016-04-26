@@ -19,7 +19,7 @@ Rectangle {
         }
         focus: true
         font.pixelSize: 20
-        wrapMode: ti_usernamefield.Wrap
+       // wrapMode: ti_usernamefield.Wrap
         anchors.horizontalCenter: rect_notecard.horizontalCenter
         anchors.verticalCenter: rect_notecard.verticalCenter
         anchors.centerIn: parent

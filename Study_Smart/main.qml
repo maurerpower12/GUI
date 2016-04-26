@@ -29,18 +29,29 @@ ApplicationWindow {
     {
         id: settings_global
         property alias color: main_window.color
-        //property alias muted_hsjakh: iPod_intro.muted
     }
 
-
     title: qsTr("Study Smart")
+
     ToolBar {
         RowLayout {
             ToolButton {
                 id: tool_logo
-                text: 'Study Smart'
-                anchors.fill: parent
+                text: 'menu'
                 Layout.alignment: Qt.AlignCenter
+                anchors.left: rect_menu.right
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        settingsInto2.start();
+                        if(rect_menu.visible === true) {
+                            settingsGoAway.start();
+                        }
+                        else {
+                             settingsInto2.start();
+                        }
+                    }
+                }
             }
         }
     }
@@ -125,23 +136,23 @@ ApplicationWindow {
         }
     }
 
-  Button {
-      text: "menu"
-      anchors.left: rect_menu.right
-      y: 40
-      MouseArea {
-          anchors.fill: parent
-          onClicked: {
-              settingsInto2.start();
-              if(rect_menu.visible === true) {
-                  settingsGoAway.start();
-              }
-              else {
-                   settingsInto2.start();
-              }
-          }
-      }
-  }
+//  Button {
+//      text: "menu"
+//      anchors.left: rect_menu.right
+//      y: 40
+//      MouseArea {
+//          anchors.fill: parent
+//          onClicked: {
+//              settingsInto2.start();
+//              if(rect_menu.visible === true) {
+//                  settingsGoAway.start();
+//              }
+//              else {
+//                   settingsInto2.start();
+//              }
+//          }
+//      }
+//  }
     // End front facing stuff
 
 
