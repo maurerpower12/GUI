@@ -8,7 +8,8 @@ SOURCES += main.cpp \
     notecard.cpp \
     deck.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    img.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -16,7 +17,9 @@ QML_IMPORT_PATH =
 # Default rules for deployment.
 include(deployment.pri)
 
-DISTFILES +=
+DISTFILES += \
+    ../img/Splash.jpg \
+    img.qml
 
 HEADERS += \
     notecard.h \
