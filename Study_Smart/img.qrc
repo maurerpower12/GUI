@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>Splash.jpg</file>
+        <file>../img/Acura.jpg</file>
     </qresource>
 </RCC>

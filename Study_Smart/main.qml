@@ -25,6 +25,7 @@ ApplicationWindow {
     property int widthVar:1000
     width:  widthVar +24
 
+    property int numcard: 0
     Settings
     {
         id: settings_global
@@ -113,7 +114,27 @@ ApplicationWindow {
             Rectangle { color: "black"; width: 50; height: 50; MouseArea { anchors.fill: parent; onClicked: main_window.color = parent.color }}
 
         }
+        Text {
+            id: txt_deck_title
+            text: "Pick a Deck of notecards:"
+            anchors.horizontalCenter: parent.horizontalCenter;
+            anchors.top: colorPicker.bottom
+        }
+        Grid {
+            id: deckPicker
+            x: 4;
+            rows: 2; columns: 3; spacing: 3
+            anchors.horizontalCenter: parent.horizontalCenter;
+            anchors.top: txt_deck_title.bottom
 
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent; } }
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea {anchors.fill: parent;  }}
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent; }}
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent;  }}
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent;  }}
+            Rectangle { color: "light grey"; width: 50; height: 50; MouseArea { anchors.fill: parent;  }}
+
+        }
         NumberAnimation {
             id: settingsGoAway;
             target: rect_menu;
@@ -163,20 +184,12 @@ ApplicationWindow {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                if(question.visible)
-                {
-                    question.visible = false;
-                    answer.visible = true;
-                }
-                else
-                {
-                    question.visible = true;
-                    answer.visible = false;
-                }
+                question.visible = !question.visible;
+                answer.visible = !answer.visible;
+
             }
         }
     }
-
     Button {
         text: "Next Notecard"
         anchors.right: parent.right
@@ -184,9 +197,31 @@ ApplicationWindow {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                console.log("Next...");
+                var max = FirstCard.currentCard();
+                if(numcard !== (max-1)) {
+                    numcard++;
+                }
+                else {
+                    numcard = 0;
+                }
             }
         }
     }
 
+    Button {
+        text: "Previous Notecard"
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                var max = FirstCard.currentCard();
+                if(numcard !== 0)
+                    numcard--;
+                else {
+                    numcard = max-1;
+                }
+            }
+        }
+    }
 }

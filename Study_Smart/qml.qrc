@@ -11,5 +11,7 @@
         <file>fontawesome.js</file>
         <file>FontAwesome.qml</file>
         <file>SystemSettings.qml</file>
+        <file>Acura.jpg</file>
+        <file>Nissan.jpg</file>
     </qresource>
 </RCC>

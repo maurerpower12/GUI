@@ -23,9 +23,10 @@ int main(int argc, char *argv[])
 
     app.processEvents();
 
-    //deck all_the_cards;
-    notecard first("Which athlete has won the most Olympic medals?", "Michael Phelps");
-    notecard second("In the movie \"Back to the Future\", what speed did the DeLorean need to reach in order to achieve time travel?", "88 mph");
+//    //deck all_the_cards;
+//    notecard first("Which athlete has won the most Olympic medals?", "Michael Phelps");
+//    notecard second("In the movie \"Back to the Future\", what speed did the DeLorean need to reach in order to achieve time travel?", "88 mph");
+    Deck first;
 
     engine.rootContext()->setContextProperty("FirstCard", &first);
 

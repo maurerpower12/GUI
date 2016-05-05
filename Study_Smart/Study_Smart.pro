@@ -23,4 +23,5 @@ DISTFILES += \
 
 HEADERS += \
     notecard.h \
-    deck.h
+    deck.h \
+    random.h
