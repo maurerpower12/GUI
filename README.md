@@ -32,8 +32,8 @@ The far left screen shows what the user would see when they first login. You can
 #Contribution Guidelines
 Submission must comply with the Oregon Tech Coding Style Guide. [See here under documents.](http://www.cset.oit.edu)
 
-# Bugs:
-- [ ] No bugs report yet. More to come when development begins. 
+# Change History:
+- [ ] [Here is a link to a Google Sheet that outlines each task that was complete during development! ](https://docs.google.com/spreadsheets/d/1BEgbFNZ4Aodw0FhrJps4PNTsYE3G115OccE6-F7m89M/edit?usp=sharing)
 
 # Contributor List:
 * Joseph Maurer
