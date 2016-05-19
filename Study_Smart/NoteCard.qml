@@ -1,12 +1,26 @@
 import QtQuick 2.6
 
+
 Rectangle {
     id: rect_notecard
+    property bool leftgo: false
 
     width: parent.width / 2
     height: parent.height / 3
     radius: 5
+    Behavior on leftgo {
+        NumberAnimation {
+            id: quest_out;
+            target: rect_notecard
+            easing.type: Easing.Linear;
 
+            property: "x";
+            to: -100;
+            duration: 100;
+            onStarted: console.log("Card start");
+            onStopped: console.log("Card Out");
+        }
+    }
     TextInput
     {
         id: ti_usernamefield
@@ -76,4 +90,5 @@ Rectangle {
 
         }
     }
+
 }

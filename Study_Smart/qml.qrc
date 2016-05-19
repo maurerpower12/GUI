@@ -13,5 +13,8 @@
         <file>SystemSettings.qml</file>
         <file>Acura.jpg</file>
         <file>Nissan.jpg</file>
+        <file>ss.ico</file>
+        <file>simp_logo.jpg</file>
+        <file>logo_ss.png</file>
     </qresource>
 </RCC>

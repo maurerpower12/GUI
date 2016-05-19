@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     // Splash screen code
     QQmlApplicationEngine engine;
     QPixmap pixmap(":/Splash.jpg");
+    //QWindow win;
     QSplashScreen splash(pixmap);
     splash.show();
 
@@ -20,6 +21,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("MaurerPower");
     QCoreApplication::setOrganizationDomain(".com");
 
+    app.setWindowIcon(QIcon("../Study_Smarter_Git/Study_Smart/ss.ico"));
 
     app.processEvents();
 
@@ -35,6 +37,7 @@ int main(int argc, char *argv[])
     QMainWindow window;
     window.show();
     splash.finish(&window);
+    window.hide();
 
     return app.exec();
 }

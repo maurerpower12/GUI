@@ -25,3 +25,5 @@ HEADERS += \
     notecard.h \
     deck.h \
     random.h
+
+RC_ICONS = ../Study_Smarter_Git/Study_Smart/ss.icns
