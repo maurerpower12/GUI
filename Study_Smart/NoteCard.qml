@@ -3,24 +3,11 @@ import QtQuick 2.6
 
 Rectangle {
     id: rect_notecard
-    property bool leftgo: false
+    property alias underline_txt: ti_usernamefield.font.underline
 
     width: parent.width / 2
     height: parent.height / 3
     radius: 5
-    Behavior on leftgo {
-        NumberAnimation {
-            id: quest_out;
-            target: rect_notecard
-            easing.type: Easing.Linear;
-
-            property: "x";
-            to: -100;
-            duration: 100;
-            onStarted: console.log("Card start");
-            onStopped: console.log("Card Out");
-        }
-    }
     TextInput
     {
         id: ti_usernamefield
@@ -28,28 +15,28 @@ Rectangle {
         {
             if(question.visible) {
                 acura_question.visible = false;
-                if(numcard !== 8) {
+//                if(numcard !== 8) {
                     FirstCard.getQuestion(numcard);
-                }
-                else if(numcard == 8) {
-                    acura_question.visible = true;
-//                    ti_usernamefield.text = "Company logo?"
-//                    ti_usernamefield.z = 100
-                }
+//                }
+//                else if(numcard == 8) {
+//                    acura_question.visible = true;
+////                    ti_usernamefield.text = "Company logo?"
+////                    ti_usernamefield.z = 100
+//                }
             }
 
             else {
                 acura_question.visible = false;
-                if(numcard !== 8 ) {
+//                if(numcard !== 8 ) {
                     FirstCard.getAnswer(numcard);
-                }
-                 else if(numcard == 8) {
-//                    console.log("flip acura");
-//                    //answer.visible = true
-//                     acura_question.visible = false;
-                     //ti_usernamefield.text = "Company logo: Acura"
-                    text = "Company Logo"
-                 }
+//                }
+//                 else if(numcard == 8) {
+////                    console.log("flip acura");
+////                    //answer.visible = true
+////                     acura_question.visible = false;
+//                     //ti_usernamefield.text = "Company logo: Acura"
+//                    text = "Company Logo"
+//                 }
             }
         }
         focus: true

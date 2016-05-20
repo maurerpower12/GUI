@@ -1,20 +1,17 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
         <file>MyButton.qml</file>
         <file>Notification.qml</file>
         <file>MyDialog.qml</file>
         <file>Splash.qml</file>
         <file>Splash.jpg</file>
         <file>NoteCard.qml</file>
-        <file>fontawesome.js</file>
-        <file>FontAwesome.qml</file>
         <file>SystemSettings.qml</file>
         <file>Acura.jpg</file>
         <file>Nissan.jpg</file>
-        <file>ss.ico</file>
-        <file>simp_logo.jpg</file>
         <file>logo_ss.png</file>
+        <file>ss_ico.icns</file>
+        <file>ss_ico sm.ico</file>
     </qresource>
 </RCC>

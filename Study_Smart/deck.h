@@ -75,7 +75,11 @@ public slots:
     int currentCard();
     // get the question for the card
     QString getQuestion(int index);
-     QString getAnswer(int index);
+    QString getAnswer(int index);
+
+   void setNoteCard(QString qust, QString anw);
+   void Shuffle();
+   void Clear();
 private:
     //Used in shuffle
     Random rand;

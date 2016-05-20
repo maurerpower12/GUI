@@ -5,6 +5,10 @@
 #include <QMainWindow>
 #include "deck.h"
 
+#ifdef Q_OS_MAC
+
+#endif
+
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -21,13 +25,10 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("MaurerPower");
     QCoreApplication::setOrganizationDomain(".com");
 
-    app.setWindowIcon(QIcon("../Study_Smarter_Git/Study_Smart/ss.ico"));
+    app.setWindowIcon(QIcon("qrc:/ss_ico sm.ico"));
 
     app.processEvents();
 
-//    //deck all_the_cards;
-//    notecard first("Which athlete has won the most Olympic medals?", "Michael Phelps");
-//    notecard second("In the movie \"Back to the Future\", what speed did the DeLorean need to reach in order to achieve time travel?", "88 mph");
     Deck first;
 
     engine.rootContext()->setContextProperty("FirstCard", &first);

@@ -12,7 +12,10 @@ RESOURCES += qml.qrc \
     img.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
+#QML_IMPORT_PATH =
+
+ICON = ../Study_Smart/ss_ico.icns
+#RC_ICONS = ss_ico.icns
 
 # Default rules for deployment.
 include(deployment.pri)
@@ -26,4 +29,3 @@ HEADERS += \
     deck.h \
     random.h
 
-RC_ICONS = ../Study_Smarter_Git/Study_Smart/ss.icns
