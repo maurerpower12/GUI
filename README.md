@@ -23,6 +23,14 @@ Far Left Screen | Middle Screen | Right Screen | Landscape Screen
 ------------ | ------------- | ------------ | ------------- 
 The far left screen shows what the user would see when they first login. You can sort the note cards by Label, Front or Back. |  The main screen is the one in the middle that allows the user to enter questions and answers for each notecard. | The far right screen shows an exmple of a note card that contains an image. | The sideways view at the bottom shows how the user can press if they got the card right or wrong.
 
+Final screenshots:
+Here are some screenshots from the final project.
+Note card interface: 
+![alt tag](https://raw.githubusercontent.com/maurerpower12/Study-Smart/master/interface.png)
+
+Adding a note card:
+![alt tag](https://raw.githubusercontent.com/maurerpower12/Study-Smart/master/new.png)
+
 
 # Installation Instructions: 
 1. Install Qt 5.6 
