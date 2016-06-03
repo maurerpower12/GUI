@@ -7,7 +7,7 @@
 
 #include "notecard.h"
 
-notecard::notecard(QString question, QString answer) : m_question(question), m_answer(answer)
+notecard::notecard(QString question, QString answer) : m_question(question), m_answer(answer), m_correct(0)
 {}
 QString notecard::get_question()
 {
@@ -29,36 +29,13 @@ void notecard::set_answer(QString answer)
     m_answer = answer;
 }
 
-bool notecard::check_answer(QString user_answer)
+int notecard::is_correct()
 {
-    bool grade = false;
-    if(m_answer != nullptr)
-    {
-        if(user_answer == m_answer)
-        {
-            grade = true;
-            m_num_correct++;
-        }
-        else
-        {
-            grade = false;
-            m_num_wrong++;
-        }
-        return grade;
-    }
-    else
-    {
-        //cout << "Error" << endl;
-    }
-    return false;
+    return m_correct;
 }
 
-int notecard::number_of_times_correct()
+void notecard::set_correct(int correct)
 {
-    return m_num_correct;
+    m_correct = correct;
 }
 
-int notecard::number_of_times_wrong()
-{
-    return m_num_wrong;
-}

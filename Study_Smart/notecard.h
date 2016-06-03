@@ -24,15 +24,15 @@ public slots:
     QString get_answer();
     void set_answer(QString answer);
 
-    bool check_answer(QString user_answer);
-
-    int number_of_times_correct();
-    int number_of_times_wrong();
+    int is_correct();
+    void set_correct(int correct);
 private:
     QString m_question;
     QString m_answer;
-    int m_num_correct;
-    int m_num_wrong;
+    int m_correct;
+    // 0 = not set
+    // 1 = correct
+    // 2 = wrong
 };
 
 #endif // NOTECARD_H

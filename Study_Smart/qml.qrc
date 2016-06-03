@@ -8,10 +8,11 @@
         <file>Splash.jpg</file>
         <file>NoteCard.qml</file>
         <file>SystemSettings.qml</file>
-        <file>Acura.jpg</file>
-        <file>Nissan.jpg</file>
         <file>logo_ss.png</file>
         <file>ss_ico.icns</file>
         <file>ss_ico sm.ico</file>
+        <file>Loading.qml</file>
+        <file>SwipeArea.qml</file>
+        <file>LoadCards.js</file>
     </qresource>
 </RCC>

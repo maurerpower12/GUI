@@ -21,8 +21,7 @@ ICON = ../Study_Smart/ss_ico.icns
 include(deployment.pri)
 
 DISTFILES += \
-    ../img/Splash.jpg \
-    img.qml
+    ../img/Splash.jpg
 
 HEADERS += \
     notecard.h \

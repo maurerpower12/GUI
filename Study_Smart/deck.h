@@ -1,44 +1,14 @@
-//#ifndef DECK_H
-//#define DECK_H
-
-//#include <QList>
-//#include <QObject>
-//#include <list>
-//#include "notecard.h"
-//#include <QString>
-//using std::string;
-//class deck : public QObject
-//{
-//public:
-//public slots:
-//    deck();
-//    void add_notecard(notecard pass);
-//    int get_numcards();
-//    void remove_notecard(notecard pass);
-//    void delete_deck();
-//private:
-//    QList<const notecard> m_deck;
-//    //std::list<notecard> m_deck;
-//    int m_num_cards;
-
-//};
-
-//#endif // DECK_H
-
-
 /************************************************************************
 * Class: Deck
 * Updates:
-*	1. Now updated to include the copy ctor and op=
+*
 *
 * Overview:
-*		This class makes a deck of playing and has the ability to
-*		shuffle those cards and deal one of them. Used in conjunction
-*		the the Card class(:
+*
 *
 * Constructors:
 *	Deck()
-*		Makes the deck of cards in order and by suit.
+*
 *
 * Mutators:
 *	None.
@@ -71,6 +41,7 @@ class Deck : public QObject
 public:
     // Instantiates the deck of cards
     Deck();
+    ~Deck();
 public slots:
     int currentCard();
     // get the question for the card
@@ -78,13 +49,17 @@ public slots:
     QString getAnswer(int index);
 
    void setNoteCard(QString qust, QString anw);
-   void Shuffle();
-   void Clear();
+   void shuffle();
+   void clear();
+
+   void setCorrect(int correct, int index);
+   int isCorrect(int index);
+   void deleteCard(int index);
+   void cleanUp();
 private:
     //Used in shuffle
     Random rand;
     // Var of deck of cards
-    //QStack<notecard> m_deck;
     notecard * m_deck[52];
     //Current card to be dealt
     int m_currentCard;
