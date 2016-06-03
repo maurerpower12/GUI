@@ -23,7 +23,7 @@ Far Left Screen | Middle Screen | Right Screen | Landscape Screen
 ------------ | ------------- | ------------ | ------------- 
 The far left screen shows what the user would see when they first login. You can sort the note cards by Label, Front or Back. |  The main screen is the one in the middle that allows the user to enter questions and answers for each notecard. | The far right screen shows an exmple of a note card that contains an image. | The sideways view at the bottom shows how the user can press if they got the card right or wrong.
 
-Here are some screenshots from the final project!
+**Here are some screenshots from the final project taken on a mac!**
 
 
 Note card interface: 
